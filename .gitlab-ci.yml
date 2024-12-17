@@ -43,7 +43,7 @@ apply:
         - terraform apply -input=false "planfile"
     when: manual
 
-desyroy:
+destroy:
     stage: destroy
     script:
         - terraform destroy -auto-approve
